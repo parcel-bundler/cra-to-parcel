@@ -1,0 +1,8 @@
+{
+  "name": "cra-to-parcel",
+  "version": "0.0.5",
+  "bin": "migrate.mjs",
+  "engines": {
+    "node": ">= 20"
+  }
+}
