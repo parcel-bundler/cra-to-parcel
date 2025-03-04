@@ -276,7 +276,7 @@ function walkFiles(f, cb) {
   for (let file of fs.readdirSync(f, {withFileTypes: true})) {
     let fullPath = path.join(f, file.name);
     if (file.isDirectory()) {
-      if (walkFiles(fullPath) === false) {
+      if (walkFiles(fullPath, cb) === false) {
         return false;
       }
     } else if (file.isFile()) {
